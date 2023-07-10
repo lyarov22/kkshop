@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KKshop</title>
-    <link rel="stylesheet" href="styles/style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
     <div class="page">
@@ -106,6 +110,95 @@
             
         </div>
 
+        <div class="new-product">
+            <div class="new__container">
+                <h1 class="new__name">Новинки</h1>
+                <div class="swiper-pagination"></div>
+            </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <img src="./img/slide1.png" alt="" class="slide__img">
+                <div class="slide__deskription">
+                    <h1 class="slide__name">Slimming Gel Body</h1>
+                    <div class="slide-about">
+                        <p class="slide__about">Гель для тела для похудения</p>
+                        <h1 class="slide__cost">2 480 руб</h1>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/slide2.png" alt="" class="slide__img">
+                <div class="slide__deskription">
+                    <h1 class="slide__name">Slimming Gel Body</h1>
+                    <div class="slide-about">
+                        <p class="slide__about">Гель для тела для похудения</p>
+                        <h1 class="slide__cost">2 480 руб</h1>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/slide2.png" alt="" class="slide__img">
+                <div class="slide__deskription">
+                    <h1 class="slide__name">Slimming Gel Body</h1>
+                    <div class="slide-about">
+                        <p class="slide__about">Гель для тела для похудения</p>
+                        <h1 class="slide__cost">2 480 руб</h1>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/slide1.png" alt="" class="slide__img">
+                <div class="slide__deskription">
+                    <h1 class="slide__name">Slimming Gel Body</h1>
+                    <div class="slide-about">
+                        <p class="slide__about">Гель для тела для похудения</p>
+                        <h1 class="slide__cost">2 480 руб</h1>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/slide1.png" alt="" class="slide__img">
+                <div class="slide__deskription">
+                    <h1 class="slide__name">Slimming Gel Body</h1>
+                    <div class="slide-about">
+                        <p class="slide__about">Гель для тела для похудения</p>
+                        <h1 class="slide__cost">2 480 руб</h1>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/slide1.png" alt="" class="slide__img">
+                <div class="slide__deskription">
+                    <h1 class="slide__name">Slimming Gel Body</h1>
+                    <div class="slide-about">
+                        <p class="slide__about">Гель для тела для похудения</p>
+                        <h1 class="slide__cost">2 480 руб</h1>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            
+        </div>
     </div>
+    </div>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        // Настройки слайдера
+        slidesPerView: 4,
+        spaceBetween: 10,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+    });
+</script>
 </body>
 </html>

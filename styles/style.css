@@ -225,3 +225,31 @@ a
     color:   rgb(143, 143, 143);
     font-weight: normal; 
 }
+.slide__img{
+    width: 294px;
+    height: 250px;
+    
+}
+.swiper-slide{
+    width: 377px;
+    height: 400px;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+.swiper-container{
+    padding-top: 30px;
+}
+
+.new-product{
+    padding-top: 60px;
+}
+
+.new__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper-pagination{
+    bottom: auto;
+}
