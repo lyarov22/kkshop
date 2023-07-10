@@ -226,15 +226,29 @@ a
     font-weight: normal; 
 }
 .slide__img{
+
     width: 294px;
     height: 250px;
-    
-}
-.swiper-slide{
-    width: 377px;
-    height: 400px;
+    padding: 75px 40px;
     background-color: #f3f3f3;
-    text-align: center;
+}
+
+.slide__name{
+    font-family: Bebas Neue;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+
+.slide__about{
+    color: #5C5C66;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
 }
 
 .swiper-container{
@@ -242,14 +256,26 @@ a
 }
 
 .new-product{
+    justify-content: center;
     padding-top: 60px;
+    padding-left: 100px;
 }
 
-.new__container{
+.slide-about{
     display: flex;
     justify-content: space-between;
+    max-width: 350px;
 }
 
-.swiper-pagination{
-    bottom: auto;
+.slide__cost{
+    color: #1A1A1A;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.slide__deskription{
+    padding: 10px;
 }
