@@ -3,7 +3,7 @@
 html, body {
     margin: 0;
     padding: 0;
-
+    font-family: Roboto;
 }
 
 .page
@@ -190,3 +190,38 @@ a
     color: white;
 }
 
+.about{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 68px;
+     
+}
+
+.about__title{
+    font-size: 32px; 
+}
+
+.about__deskription{
+    font-size: 16px;
+}
+
+.pluses{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,400px);
+    gap: 30px;
+    justify-content: center; 
+}
+
+.pluses-container{
+    border: 1px solid #dadada; 
+    align-items: center;   
+}
+
+.pluses__title{
+    padding-left: 30px;
+    font-family: Bebas Neue;
+    font-size: 18px;
+    color:   rgb(143, 143, 143);
+    font-weight: normal; 
+}
