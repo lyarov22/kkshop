@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&family=Rubik:wght@500&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    overflow-x: hidden;
+}
+
+.page
+{
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.header-header0
+{
+    height: 49px;
+    background: #323232;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+
+}
+
+.header-select
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    padding: 5px;
+}
+
+.header-select option {
+    background-color: black; /* Убирает внутренний фон опций */
+}
+  
+
+.header-phone
+{
+    color: white;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.header-header1
+{
+    height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+.header-header1__first
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navbar
+{   
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.nav-item
+{
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 0 10px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.header-icons__link {
+  padding: 0 10px;
+}
+
+
+.icons-ellipse {
+  position: relative;
+}
+
+.header-icons__count {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+}
+
+
+
+.promotion {
+    background-color: #f0f0f0; /* Цвет фона */
+    background-image: url('../img/skindom.png'); /* Путь к изображению фона */
+    background-size: cover;
+    background-position: center;
+    height: 698px;
+    
+}
+
+.promotion-promotion
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 275px;
+    text-align: left;
+    
+}
+
+.promotion__title
+{
+  color: #000;
+  font-family: Rubik;
+  font-size: 99px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.promotion__description
+{
+    color: #000;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10%;
+}
+
+.promotion__button
+{
+    width: 268px;
+    height: 58px;
+    flex-shrink: 0;
+    background: #000;
+    color: #FFF;
+    font-family: Bebas Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.675px;
+}
+
+.promotion__link
+{
+    color: white;
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 68px;
+     
+}
+
+.about__title{
+    font-size: 32px; 
+}
+
+.about__deskription{
+    font-size: 16px;
+}
+
+.pluses{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,400px);
+    gap: 30px;
+    justify-content: center; 
+}
+
+.pluses-container{
+    border: 1px solid #dadada; 
+    align-items: center;   
+}
+
+.pluses__title{
+    padding-left: 30px;
+    font-family: Bebas Neue;
+    font-size: 18px;
+    color:   rgb(143, 143, 143);
+    font-weight: normal; 
+}
+.slide__img{
+
+    width: 294px;
+    height: 250px;
+    padding: 75px 40px;
+    background-color: #f3f3f3;
+}
+
+.slide__name{
+    font-family: Bebas Neue;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+
+.slide__about{
+    color: #5C5C66;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.swiper-container{
+    padding-top: 30px;
+}
+
+.new-product{
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 100px;
+}
+
+.slide-about{
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+}
+
+.slide__cost{
+    color: #1A1A1A;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.slide__deskription{
+    padding: 10px;
+}
+
+.product__name{
+    color: #000;
+    font-family: Bebas Neue;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1.8px;
+}
+
+.product__about{
+    color: #969696;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.action-product{
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 100px; 
+}
+
+.swiper-product-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__img{
+    width: 900px;
+    height: 480px;
+    flex-shrink: 0;
+    background: url(<path-to-image>), rgb(242, 242, 242) 74px -309.658px / 85.051% 174.689% no-repeat;
+}
+
+.product-description{
+    width: 900px;
+}

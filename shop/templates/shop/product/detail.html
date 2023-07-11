@@ -1,0 +1,45 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% block title %}
+    {% if category %}{{ category.title }}{% else %}Products{% endif %}
+{% endblock %}
+{% block content %}
+    <div class="product-detail">
+        <h2><a href="{{ product.category.get_absolute_url }}">{{ product.category }}</a></h2>
+        <p>{{ product.denotation }}</p>
+        <h1>{{ product.name }}</h1>
+
+        <p>Объём: {{ product.weight }} мл</p>
+
+        {% if product.is_discounted %}
+          <p><s>Старая цена: {{ product.get_old_price }} руб</s></p>
+          <p>Без скидки</p>
+          <p>Новая цена: {{ product.get_discount_price }} руб</p>
+          <p>Со скидкой {{ product.discount }} %</p>
+        {% else %}
+          <p>Цена: {{ product.price }}</p>
+        {% endif %}
+
+        <form action="{% url "cart:cart_add" product.id %}" method="post">
+            {{ cart_product_form }}
+            {% csrf_token %}
+            <input type="submit" value="Добавить в корзину" {% if not product.available %}disabled{% endif %}>
+        </form>
+        
+
+        <p>Наличие в магазинах: 
+            {% if product.available %}
+                Да
+            {% else %}
+                Нет
+            {% endif %}
+        </p>
+
+
+
+        <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.jpg" %}{% endif %}">
+
+        <p>{{ product.description }}</p>
+
+    </div>
+{% endblock %}
