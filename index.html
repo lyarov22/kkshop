@@ -209,12 +209,65 @@
           </div>
         </div>
       </div>
+      <div class="action-product">
+        <h1 class="action__name">Акционные товары</h1>
+        <div class="swiper-product-container">
+          <div class="swiper-wrapper">
 
+            <div class="swiper-slide">
+               <img src="./img/product.png" alt="img" class="product__img">
+               <div class="product-description">
+                  <h1 class="product__name">R&B Black Food 3.7</h1>
+                  <p class="product__about">Бальзам-ополаскиватель для волос с экстрактами 3 черных семян и 7 черных плодов</p>
+               </div>
+            </div>
+             
+            <div class="swiper-slide">
+              <img src="./img/product.png" alt="img" class="product__img">
+              <div class="product-description">
+                 <h1 class="product__name">R&B Black Food 3.7</h1>
+                 <p class="product__about">Бальзам-ополаскиватель для волос с экстрактами 3 черных семян и 7 черных плодов</p>
+              </div>
+           </div>
+
+           <div class="swiper-slide">
+            <img src="./img/product.png" alt="img" class="product__img">
+            <div class="product-description">
+               <h1 class="product__name">R&B Black Food 3.7</h1>
+               <p class="product__about">Бальзам-ополаскиватель для волос с экстрактами 3 черных семян и 7 черных плодов</p>
+            </div>
+         </div>
+
+         <div class="swiper-slide">
+          <img src="./img/product.png" alt="img" class="product__img">
+          <div class="product-description">
+             <h1 class="product__name">R&B Black Food 3.7</h1>
+             <p class="product__about">Бальзам-ополаскиватель для волос с экстрактами 3 черных семян и 7 черных плодов</p>
+          </div>
+       </div>
+            
+          </div>
+        </div>
+      </div>
     </div>
     <script>
       var swiper = new Swiper(".swiper-container", {
         slidesPerView: 4,
         spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper = new Swiper(".swiper-product-container", {
+        slidesPerView: 2,
+        spaceBetween: 130,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
